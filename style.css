@@ -1,0 +1,60 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Spartan', sans-serif;
+    /*background: lightblue url("https://i.pinimg.com/originals/3c/24/46/3c24462450c2a902bf7e18f3d9aada81.jpg");*/
+    background: #001B3E;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+    font-size: 1.5rem;
+    perspective: 1000px;
+}
+#today{
+    background: red;
+}
+.chooseBtn{
+    cursor: pointer;
+
+}
+.chooseBtn select, .chooseBtn button{
+    background: none;
+    font-size: 2rem;
+    color: white;
+    margin-right: 2rem;
+    border: none;
+    border-radius: 5px;
+}
+
+.chooseBtn select option{
+    background: #001B3E;
+    font-size: 1.2rem;
+}
+/*.chooseBtn:nth-child(2)*/
+.chooseBtn select:hover, .chooseBtn button:hover{
+    background: rgba(255,255,255,0.3);
+}
+#calendar {
+    width: 70%;
+    min-width: 350px;
+    max-width: 700px;
+    font-size: 2rem;
+}
+#calendar table{
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+#calendar table tr{
+    border-bottom: 1px solid white;
+}
+
+#calendar table td{
+    height: 4rem;
+    text-align: center;
+}
